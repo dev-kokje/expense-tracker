@@ -60,7 +60,7 @@ const ExpenseForm = (props) => {
       <CardContent>
         <form>
           <Grid container justifyContent="center" alignItems="center">
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={3}>
               <TextField
                 label="Expense Title"
                 variant="outlined"
@@ -69,7 +69,7 @@ const ExpenseForm = (props) => {
                 onChange={titleInputHandler}
               />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={3}>
               <TextField
                 label="Expense Date"
                 variant="outlined"
@@ -82,7 +82,7 @@ const ExpenseForm = (props) => {
                 onChange={dateInputHandler}
               />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={3}>
               <TextField
                 label="Expense Amount ($)"
                 variant="outlined"
@@ -92,7 +92,7 @@ const ExpenseForm = (props) => {
                 onChange={amountInputHandler}
               />
             </Grid>
-            <Grid item xs={2}>
+            <Grid item xs={12} sm={3}>
               <Button
                 variant="contained"
                 color="primary"
@@ -101,7 +101,7 @@ const ExpenseForm = (props) => {
                 fullWidth
                 onClick={formSubmitHandler}
               >
-                Add New Expense
+                Add Expense
               </Button>
             </Grid>
           </Grid>
